@@ -27,7 +27,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
-  background: #fff;
 }
 
 ol, ul {
@@ -405,7 +404,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-.ChemicalFactory.bg:before {
+.bg:before {
   content: '';
   position: fixed;
   z-index: -1;
@@ -414,7 +413,6 @@ body {
   bottom: 0;
   left: 0;
   background-size: cover;
-  overflow: hidden;
 }
 .school{
   background: 50% no-repeat url(../img/school.png);
@@ -422,33 +420,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-.school.bg:before {
-  content: '';
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  overflow: hidden;
-}
 .Hospital{
   background: 50% no-repeat url(../img/Hospital.png);
     height: 340px;
     background-size: cover;
     background-attachment: fixed;
-}
-.Hospital.bg:before {
-  content: '';
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  overflow: hidden;
 }
 .backdrop-blur {
   backdrop-filter: blur(5px);
@@ -1057,6 +1033,19 @@ body {
 }
 
 @media (max-width: 910px) {
+  
+.ChemicalFactory{
+  background: 50% no-repeat url(../img/ChemicalFactory.png);
+    background-attachment: scroll;
+}
+.school{
+  background: 50% no-repeat url(../img/school.png);
+  background-attachment: scroll;
+}
+.Hospital{
+  background: 50% no-repeat url(../img/Hospital.png);
+  background-attachment: scroll;
+}
   .advItem{
     width: 80%;
   }
