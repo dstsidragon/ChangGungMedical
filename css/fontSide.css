@@ -64,8 +64,8 @@ img {
 }
 
 body {
-  /* font-family: 'Noto Sans', sans-serif; */
-  font-family: 'HachiMaruPop-Regular';
+  font-family: '微軟正黑體', sans-serif;
+  /* font-family: 'HachiMaruPop-Regular'; */
   font-weight: bold;
 }
 .c-primary{
@@ -887,7 +887,7 @@ body {
 }
 
 .ml5 .ampersand {
-  font-family: Baskerville, serif;
+  font-family: '微軟正黑體', sans-serif;
   font-style: italic;
   font-weight: 400;
   width: 1em;
