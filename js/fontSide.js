@@ -1,37 +1,6 @@
 
 
 $(function () {
-////////banner文字特效 /////////////
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml5 .ampersand',
-    opacity: [0,1],
-    scaleY: [0.5, 1],
-    easing: "easeOutExpo",
-    duration: 1500,
-    offset: '-=600'
-  }).add({
-    targets: '.ml5 .letters-left',
-    opacity: [0,1],
-    translateX: ["0.5em", 0],
-    easing: "easeOutExpo",
-    duration: 1000,
-    offset: '-=300'
-  }).add({
-    targets: '.ml5 .letters-right',
-    opacity: [0,1],
-    translateX: ["-0.5em", 0],
-    easing: "easeOutExpo",
-    duration: 1000,
-    offset: '-=300'
-  }).add({
-    targets: '.ml5',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-////////banner文字特效 END/////////////
 
 ////////back to top/////////////
   var $win = $(window);
@@ -62,6 +31,13 @@ anime.timeline({loop: true})
 
   });
 ////////back to top END/////////////
+//監聽選單點擊後 收起畫布
+$('.offcanvas .dropdown-item').click(()=>{
+  event.preventDefault();
+  let top = $('#'+event.target.href.split('#')[1]).offset().top;//取得點擊的毛點座標
+  $('html, body').scrollTop(top - 97);
+ $('#btn-closeoffcanvas').trigger('click');
+});
 
 
 //往下滑

@@ -908,6 +908,12 @@ body {
   font-weight: bolder;
   z-index: 500;
 }
+:target:before {
+  content: "";
+  display: block;
+  height: 94px;
+  }
+  
 .chevron{
   width: 40px;
   display: block;

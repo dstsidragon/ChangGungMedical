@@ -77,7 +77,7 @@
                       廠區危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#ChemicalFactory">氫氟酸</a></li>
+                    <li><a class="dropdown-item" href="#hf">氫氟酸</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -85,7 +85,7 @@
                     學校危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#school">食物中毒</a></li>
+                    <li><a class="dropdown-item" href="#foodpoisoning">食物中毒</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -93,11 +93,11 @@
                       藥物危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#Hospital">Acetaminophen</a></li>
-                    <li><a class="dropdown-item" href="#Acetaminophen">BZD</a></li>
-                    <li><a class="dropdown-item" href="#BZD">嗎啡(Morphine)</a></li>
-                    <li><a class="dropdown-item" href="#Morphine">海洛因(Heroin)</a></li>
-                    <li><a class="dropdown-item" href="#Heroin">安非他命(Amphetamine)</a></li>
+                    <li><a class="dropdown-item" href="#Acetaminophen">Acetaminophen</a></li>
+                    <li><a class="dropdown-item" href="#BZD">BZD</a></li>
+                    <li><a class="dropdown-item" href="#Morphine">嗎啡(Morphine)</a></li>
+                    <li><a class="dropdown-item" href="#Heroin">海洛因(Heroin)</a></li>
+                    <li><a class="dropdown-item" href="#Amphetamine">安非他命(Amphetamine)</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -105,15 +105,15 @@
                       動物危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#Amphetamine">眼鏡蛇</a></li>
-                    <li><a class="dropdown-item" href="#cobra">雨傘節</a></li>
-                    <li><a class="dropdown-item" href="#umbrella">龜殼花</a></li>
-                    <li><a class="dropdown-item" href="#tortoise">赤尾青竹絲</a></li>
-                    <li><a class="dropdown-item" href="#Chiwei">百步蛇</a></li>
-                    <li><a class="dropdown-item" href="#hundred">鎖鏈蛇</a></li>
-                    <li><a class="dropdown-item" href="#chainsnake">蜂</a></li>
-                    <li><a class="dropdown-item" href="#bee">紅火蟻</a></li>
-                    <li><a class="dropdown-item" href="#ant">河豚</a></li>
+                    <li><a class="dropdown-item" href="#cobra">眼鏡蛇</a></li>
+                    <li><a class="dropdown-item" href="#umbrella">雨傘節</a></li>
+                    <li><a class="dropdown-item" href="#tortoise">龜殼花</a></li>
+                    <li><a class="dropdown-item" href="#Chiwei">赤尾青竹絲</a></li>
+                    <li><a class="dropdown-item" href="#hundred">百步蛇</a></li>
+                    <li><a class="dropdown-item" href="#chainsnake">鎖鏈蛇</a></li>
+                    <li><a class="dropdown-item" href="#bee">蜂</a></li>
+                    <li><a class="dropdown-item" href="#ant">紅火蟻</a></li>
+                    <li><a class="dropdown-item" href="#pufferfish">河豚</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -121,10 +121,10 @@
                       環境危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#pufferfish">巴拉刈</a></li>
-                    <li><a class="dropdown-item" href="#herbicide">漂白水</a></li>
-                    <li><a class="dropdown-item" href="#bleach">鹽酸</a></li>
-                    <li><a class="dropdown-item" href="#hydrochloricacid">一氧化碳</a></li>
+                    <li><a class="dropdown-item" href="#herbicide">巴拉刈</a></li>
+                    <li><a class="dropdown-item" href="#bleach">漂白水</a></li>
+                    <li><a class="dropdown-item" href="#hydrochloricacid">鹽酸</a></li>
+                    <li><a class="dropdown-item" href="#co">一氧化碳</a></li>
                   </ul>
                 </li>
             </ul>
@@ -133,7 +133,7 @@
       </nav>
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" id="btn-closeoffcanvas" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav topBar-menu">
@@ -142,7 +142,7 @@
                       廠區危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink1">
-                    <li><a class="dropdown-item" href="#ChemicalFactory">氫氟酸</a></li>
+                    <li><a class="dropdown-item" href="#hf">氫氟酸</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -150,7 +150,7 @@
                     學校危害
                   </a>
                   <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink2">
-                    <li><a class="dropdown-item" href="#school">食物中毒</a></li>
+                    <li><a class="dropdown-item" href="#foodpoisoning">食物中毒</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -158,11 +158,11 @@
                       藥物危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink3">
-                    <li><a class="dropdown-item" href="#Hospital">Acetaminophen</a></li>
-                    <li><a class="dropdown-item" href="#Acetaminophen">BZD</a></li>
-                    <li><a class="dropdown-item" href="#BZD">嗎啡(Morphine)</a></li>
-                    <li><a class="dropdown-item" href="#Morphine">海洛因(Heroin)</a></li>
-                    <li><a class="dropdown-item" href="#Heroin">安非他命(Amphetamine)</a></li>
+                    <li><a class="dropdown-item" href="#Acetaminophen">Acetaminophen</a></li>
+                    <li><a class="dropdown-item" href="#BZD">BZD</a></li>
+                    <li><a class="dropdown-item" href="#Morphine">嗎啡(Morphine)</a></li>
+                    <li><a class="dropdown-item" href="#Heroin">海洛因(Heroin)</a></li>
+                    <li><a class="dropdown-item" href="#Amphetamine">安非他命(Amphetamine)</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -170,15 +170,15 @@
                       動物危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink4">
-                    <li><a class="dropdown-item" href="#Amphetamine">眼鏡蛇</a></li>
-                    <li><a class="dropdown-item" href="#cobra">雨傘節</a></li>
-                    <li><a class="dropdown-item" href="#umbrella">龜殼花</a></li>
-                    <li><a class="dropdown-item" href="#tortoise">赤尾青竹絲</a></li>
-                    <li><a class="dropdown-item" href="#Chiwei">百步蛇</a></li>
-                    <li><a class="dropdown-item" href="#hundred">鎖鏈蛇</a></li>
-                    <li><a class="dropdown-item" href="#chainsnake">蜂</a></li>
-                    <li><a class="dropdown-item" href="#bee">紅火蟻</a></li>
-                    <li><a class="dropdown-item" href="#ant">河豚</a></li>
+                    <li><a class="dropdown-item" href="#cobra">眼鏡蛇</a></li>
+                    <li><a class="dropdown-item" href="#umbrella">雨傘節</a></li>
+                    <li><a class="dropdown-item" href="#tortoise">龜殼花</a></li>
+                    <li><a class="dropdown-item" href="#Chiwei">赤尾青竹絲</a></li>
+                    <li><a class="dropdown-item" href="#hundred">百步蛇</a></li>
+                    <li><a class="dropdown-item" href="#chainsnake">鎖鏈蛇</a></li>
+                    <li><a class="dropdown-item" href="#bee">蜂</a></li>
+                    <li><a class="dropdown-item" href="#ant">紅火蟻</a></li>
+                    <li><a class="dropdown-item" href="#pufferfish">河豚</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -186,10 +186,10 @@
                       環境危害
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink5">
-                    <li><a class="dropdown-item" href="#pufferfish">巴拉刈</a></li>
-                    <li><a class="dropdown-item" href="#herbicide">漂白水</a></li>
-                    <li><a class="dropdown-item" href="#bleach">鹽酸</a></li>
-                    <li><a class="dropdown-item" href="#hydrochloricacid">一氧化碳</a></li>
+                    <li><a class="dropdown-item" href="#herbicide">巴拉刈</a></li>
+                    <li><a class="dropdown-item" href="#bleach">漂白水</a></li>
+                    <li><a class="dropdown-item" href="#hydrochloricacid">鹽酸</a></li>
+                    <li><a class="dropdown-item" href="#co">一氧化碳</a></li>
                   </ul>
                 </li>
             </ul>
@@ -236,7 +236,6 @@
             }
         })
     </script>
-
     <!-- 常見中毒類型 -->
     <h3 class="section-title title-border">常見中毒類型</h3>
     <!-- 廠區 -->
