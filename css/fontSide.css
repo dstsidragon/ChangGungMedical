@@ -1035,16 +1035,13 @@ body {
 @media (max-width: 910px) {
   
 .ChemicalFactory{
-  background: 50% no-repeat url(../img/ChemicalFactory.png);
-    background-attachment: scroll;
+    background-attachment: none;
 }
 .school{
-  background: 50% no-repeat url(../img/school.png);
-  background-attachment: scroll;
+  background-attachment: none;
 }
 .Hospital{
-  background: 50% no-repeat url(../img/Hospital.png);
-  background-attachment: scroll;
+  background-attachment: none;
 }
   .advItem{
     width: 80%;
